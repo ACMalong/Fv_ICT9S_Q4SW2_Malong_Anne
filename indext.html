@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>Q4 Seatwork 2</title>
+
+	<style>
+			Body{
+				background-image: url("https://i.pinimg.com/originals/6d/2c/4a/6d2c4a719ed687659970a90fe2ae312e.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color:  #ff4dc4;	
+			}
+	</style>
+</head>
+<body>
+
+<center>
+	<form class="form-group">
+		<label id="num1">Enter Value for X</label>
+			<input type="number" class="form-control" id="input1" placeholder="Enter here">
+		<label id="num2">Enter Value for Y</label>
+			<input type="number" class="form-control" id="input2" placeholder="Enter here">
+
+		<button class="btn btn-danger" id="button1" onclick="add()">Sum of X and Y </button>
+		<button class="btn btn-danger" id="button2" onclick="product()">Product of X and Y </button>
+		<button class="btn btn-danger" id="button3" onclick="compare()">Is X grater than Y </button>
+		<button class="btn btn-danger" id="button4" onclick="contrast()">Is X lesser than Y </button>
+	</form>
+</center>
+
+	<script type="text/javascript">
+		function add(){
+			var num1 = document.getElementById("input1").value;//assine value
+			var num2 = document.getElementById("input2").value;//assinn value
+			var add1 = Number(num1) + Number(num2);//add the number
+
+			window.alert("The sum of X and Y is:" + add1);
+		}
+				function product(){
+			var num1 = document.getElementById("input1").value;//assine value
+			var num2 = document.getElementById("input2").value;//assinn value
+			var product = Number(num1) * Number(num2);//add the number
+
+			window.alert("The product of X and Y is:" + product);
+		}
+			function compare(){
+			var num1 = document.getElementById("input1").value;//assine value
+			var num2 = document.getElementById("input2").value;//assinn value
+			var compare = Number(num1) > Number(num2);//add the number
+
+			window.alert("Is X grater tan Y:" + compare);
+		}
+			function contrast(){
+			var num1 = document.getElementById("input1").value;//assine value
+			var num2 = document.getElementById("input2").value;//assinn value
+			var contrast = Number(num1) < Number(num2);//add the number
+
+			window.alert("Is X lesser tan Y:" + contrast);
+		}
+		
+	</script>
+</body>
+</html>
